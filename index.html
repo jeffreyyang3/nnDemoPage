@@ -5,33 +5,31 @@
   <title>hey</title>
 </head>
 <body>
-  <h1>My Frontend Library</h1>
-  <p>
-    This is a frontend micro-library focusing on 
-    data reactivity and HTML data binding. 
-  </p>
-  <p>
-    $NAME gives a small subset of the functionality
-    frameworks like React, Angular, and Vue provide 
-    while also being less efficient and more infinite-loop
-    prone.   
-  </p>
-  <p>
-    It also doesn't really have documentation other than
-    this page. I wouldn't recommend using it.
-  </p>
-  <p>4KB min + gzip.</p>
-  <div>
-    Supporting:
-    <ul>
-      <li>Reactive Data</li>
-      <li>Computed Properties</li>
-      <li>Property Watchers</li>
-      <li>Two-Way Input Binding</li>
-      <li>Declarative, reactive HTML list binding</li>
-    </ul>
+  <div id="desc">
+    <h1 nn-txt="title">
+    </h1>
+    <p nn-for="par in pars">
+      <span nn-for="par"></span>
+    </p>
+    <div>
+      Supporting:
+      <ul>
+        <li nn-for="feature in features">
+          <span nn-for="feature"></span>
+        </li>
+      </ul>
+    </div>
   </div>
-
+  <div id="ex1">
+    <p nn-txt="description"></p>
+    <div nn-txt="exData"></div>
+  </div>
 </body>
+<style>
+body {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+</style>
 <script src="bundle.js"></script>
 </html>
