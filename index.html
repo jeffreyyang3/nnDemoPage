@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hey</title>
+</head>
+<body>
+  <div id="desc">
+    <h1 nn-txt="title">
+    </h1>
+    <p nn-for="par in pars">
+      <span nn-for="par"></span>
+    </p>
+    <div>
+      Supporting:
+      <ul>
+        <li nn-for="feature in features">
+          <span nn-for="feature"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="ex1">
+    <p nn-txt="description"></p>
+    <div nn-txt="exData"></div>
+  </div>
+</body>
+<style>
+body {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+</style>
+<script src="bundle.js"></script>
+</html>
