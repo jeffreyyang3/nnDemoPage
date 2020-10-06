@@ -1,0 +1,6 @@
+{
+  "title": "Reactive Data",
+  "exData": "initial data value",
+  "exDescription": "Here's a simple example: this $NAME instance has been made available globally as 'reactive1'. The purple text above is tied to the property 'exData'. You can try modifying that data property by reassigning reactive1.state.exData in your console. If you look at the state, you'll also find that this description is a property on the state, which can also be changed.",
+  "lowerDescription": " Reactive data properties are specified in the initial argument to the $NAME constructor. Those get turned into reactive properties accessible through $NAME.state[property]. Why couldn't I just have this also be called data? I don't really know, I might make that change soon."
+}

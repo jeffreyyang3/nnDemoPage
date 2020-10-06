@@ -1,25 +1,13 @@
 import nn from "jeffs_frontend_lib";
 import app1 from "./examples/app1";
+import app2 from "./examples/app2";
+import intro from "./textContent/intro.json";
+const t0 = performance.now();
 app1("#ex1");
+app2("#ex2");
 const desc = new nn({
   el: "#desc",
-  data: {
-    title: "My Frontend Library",
-    pars: [
-      `This is a frontend micro-library focusing on data reactivity
-      and HTML data binding.`,
-      `$NAME gives a small subset of the functionality frameworks like React, 
-      Angular, and Vue provide while also being less efficient and more infinite-loop
-      prone.`,
-      `It's very lightweight: 4kb min + gzip. $NAME is written using TypeScript, with
-      no runtime dependencies.`,
-    ],
-    features: [
-      "Reactive Data",
-      "Computed Properties",
-      "Property Watchers",
-      "Two-Way input binding",
-      "Declarative, reactive HTML list binding",
-    ],
-  },
+  data: intro
 });
+const t1 = performance.now();
+console.log(`rendering took ${t1 - t0} ms`);

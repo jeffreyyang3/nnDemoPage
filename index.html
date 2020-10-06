@@ -20,17 +20,28 @@
       </div>
     </div>
     <div id="ex1">
-      <p nn-txt="description"></p>
-      <h4 nn-txt="exData" style="color: purple"></h4>
-      <p>Source Code:</p>
+      <h3 nn-txt="title"></h3>
+      <p nn-txt="lowerDescription"></p>
       <div nn-txt="htmlSample"></div>
       <div nn-txt="jsSample"></div>
+      <h4 nn-txt="exData" style="color: purple"></h4>
+      <p nn-txt="exDescription"></p>
+    </div>
+    <div id="ex2">
+      <h3 nn-txt="title"></h3>
+      <p nn-txt="description"></p>
+      <div nn-txt="htmlSample"></div>
+      <div nn-txt="jsSample"></div>
+      <p nn-txt="tryIt"></p>
+      <h4 nn-txt="enteredText" style="color: purple"></h4>
+      <input nn-model="enteredText" type="text">
     </div>
   </body>
   <style>
     body {
       padding-left: 10px;
       padding-right: 10px;
+      font-family: sans-serif;
     }
   </style>
   <script src="bundle.js"></script>
