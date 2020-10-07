@@ -22,10 +22,11 @@
     <div id="ex1">
       <h3 nn-txt="title"></h3>
       <p nn-txt="lowerDescription"></p>
+      <p nn-txt="lowerDescription2"></p>
       <div nn-txt="htmlSample"></div>
       <div nn-txt="jsSample"></div>
-      <h4 nn-txt="exData" style="color: purple"></h4>
       <p nn-txt="exDescription"></p>
+      <h4 nn-txt="exData" style="color: purple"></h4>
     </div>
     <div id="ex2">
       <h3 nn-txt="title"></h3>
@@ -36,11 +37,19 @@
       <h4 nn-txt="enteredText" style="color: purple"></h4>
       <input nn-model="enteredText" type="text">
     </div>
+    <div id="ex3">
+      <h3 nn-txt="title"></h3>
+      <p nn-for="par in descriptionPars">
+        <span nn-for="par"></span>
+      </p>
+      <p nn-txt="lowerDescription"></p>
+    </div>
   </body>
   <style>
     body {
       padding-left: 10px;
       padding-right: 10px;
+      max-width: 850px;
       font-family: sans-serif;
     }
   </style>

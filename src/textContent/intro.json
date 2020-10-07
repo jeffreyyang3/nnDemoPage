@@ -3,13 +3,14 @@
   "pars": [
     "This is a frontend micro-library focusing on data reactivity and HTML data binding.",
     "$NAME gives a small subset of the functionality frameworks like React, Angular, and Vue provide while also being less efficient and more infinite-loop prone.",
-    "It's very lightweight: 4kb min + gzip. $NAME is written using TypeScript, with no runtime dependencies."
+    "It's very lightweight: 4kb min + gzip. $NAME is written using TypeScript, with no runtime dependencies.",
+    "You can install it as a TypeScript package with NPM under the name 'jeffs_frontend_lib', or compile it and drop it in with a script tag."
   ],
   "features": [
     "Reactive Data",
+    "Input Modeling",
     "Computed Properties",
     "Property Watchers",
-    "Two-Way input binding",
     "Declarative, reactive HTML list binding"
   ]
 }

@@ -1,6 +1,7 @@
 {
   "title": "Reactive Data",
   "exData": "initial data value",
-  "exDescription": "Here's a simple example: this $NAME instance has been made available globally as 'reactive1'. The purple text above is tied to the property 'exData'. You can try modifying that data property by reassigning reactive1.state.exData in your console. If you look at the state, you'll also find that this description is a property on the state, which can also be changed.",
-  "lowerDescription": " Reactive data properties are specified in the initial argument to the $NAME constructor. Those get turned into reactive properties accessible through $NAME.state[property]. Why couldn't I just have this also be called data? I don't really know, I might make that change soon."
+  "exDescription": "Here's a simple example: this $NAME instance has been made available globally as 'reactive1'. The purple text below is tied to the property 'exData'. You can try modifying that data property by reassigning reactive1.state.exData in your console. If you look at the state, you'll also find that this description is a property on the state, which can also be changed.",
+  "lowerDescription": "Reactive data properties are specified in the initial argument to the $NAME constructor. Those get turned into reactive properties accessible through $NAME.state[property]. Why couldn't I just have this also be called data? I don't really know, I might make that change soon.",
+  "lowerDescription2": "If you want to link reactive data to HTML, you can create an empty tag with the attribute nn-txt set to whatever state property you want it to reflect. You might be thinking, what if I just want it to be text instead of a tag? Having that feature would make a lot of sense. Maybe I'll get around to it in $NAME v2. In the meantime, you could use a span or something. The data is set as the node's innerHTML, so you can put HTML in there and have it show as HTML."
 }
