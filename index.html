@@ -37,6 +37,20 @@
       <h4 nn-txt="enteredText" style="color: purple"></h4>
       <input nn-model="enteredText" type="text">
     </div>
+
+    <div id="ex4">
+      <h3 nn-txt="title"></h3>
+      <p nn-for="par in descriptionPars">
+        <span nn-for="par"></span>
+      </p>
+      <button>click to roll the dice</button> <br><br>
+      previous roll: <div id="lastRoll">none</div>
+      just rolled:<span nn-txt="currentRoll"></span>
+      <p nn-for="par in lowerDescription">
+        <span nn-for="par"></span>
+      </p>
+    </div>
+
     <div id="ex3">
       <h3 nn-txt="title"></h3>
       <p nn-for="par in descriptionPars">
@@ -44,6 +58,7 @@
       </p>
       <p nn-txt="lowerDescription"></p>
     </div>
+    
   </body>
   <style>
     body {

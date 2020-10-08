@@ -4,7 +4,10 @@
     "We can watch a property on the state and run a function whenever that property changes. These functions, along with the property name to watch are specified in the $NAME constructor as shown below.",
     "You can access the $NAME state with 'this.state' inside the function. Since $NAME binds the function with itself when calling it, you can't use an arrow function.",
     "The function is called with the first argument as the value of the watched property before an update triggered the watcher. This doesn't perform a deep copy, so that information is only useful when watching string and number properties.",
-    "Be careful when modifying $NAME state inside a watcher, as it is very easy to cause a stack overflow from watchers triggering other watchers."
-
+    "Be careful when modifying $NAME state inside a watcher, it's very easy to cause a stack overflow from watchers triggering other watchers."
+  ],
+  "lowerDescription": [
+    "Here's an example showing the watcher callback and access to the previous value."
   ]
+
 }
