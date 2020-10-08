@@ -35,7 +35,7 @@
       <div nn-txt="jsSample"></div>
       <p nn-txt="tryIt"></p>
       <h4 nn-txt="enteredText" style="color: purple"></h4>
-      <input nn-model="enteredText" type="text">
+      <input nn-model="enteredText" type="text" />
     </div>
 
     <div id="ex4">
@@ -43,9 +43,11 @@
       <p nn-for="par in descriptionPars">
         <span nn-for="par"></span>
       </p>
-      <button>click to roll the dice</button> <br><br>
-      previous roll: <div id="lastRoll">none</div>
-      just rolled:<span nn-txt="currentRoll"></span>
+      <div nn-txt="watchHTML"></div>
+      <div nn-txt="watchJS"></div>
+      <button>click to roll the dice</button> <br /><br />
+      <div>last roll: <span nn-txt="lastRoll"></span></div>
+      <div>just rolled: <span nn-txt="currentRoll"></span></div>
       <p nn-for="par in lowerDescription">
         <span nn-for="par"></span>
       </p>
@@ -56,9 +58,24 @@
       <p nn-for="par in descriptionPars">
         <span nn-for="par"></span>
       </p>
-      <p nn-txt="lowerDescription"></p>
+
+      <div nn-txt="htmlSample"></div>
+      <div nn-txt="jsSample"></div>
+      <input type="range" min="0" max="700" nn-model="width" />
+      <input type="range" min="0" max="700" nn-model="height" />
+      <select nn-model="color">
+        <option value="purple">purple</option>
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+      </select>
+      <div class="boxExample">
+        <div class="box"></div>
+        <div nn-txt="boxDescription"></div>
+      </div>
+      <p nn-for="par in lowerDescription">
+        <span nn-for="par"></span>
+      </p>
     </div>
-    
   </body>
   <style>
     body {
@@ -66,6 +83,16 @@
       padding-right: 10px;
       max-width: 850px;
       font-family: sans-serif;
+    }
+
+    .boxExample {
+      display: flex;
+      align-items: center;
+    }
+    .box {
+      margin-right: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
   </style>
   <script src="bundle.js"></script>

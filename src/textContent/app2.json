@@ -1,5 +1,5 @@
 {
   "title": "Input modeling",
   "description": "Adding the nn-model attribute to an input element will match its text content to the state property specified. Changes made in the input will update the data in state and trigger the necessary reactive actions. Changing the data property in state will also update the data shown on the input. You cannot model a computed property.",
-  "tryIt": "The purple text above is attached to the input below. Both are attached to the state property 'enteredText' Try typing something! This $NAME instance is available globally as inputModel. You'll see that changing the state with JS reflects the same changes for the input and the purple text."
+  "tryIt": "The purple text above is attached to the input below. Both are attached to the state property 'enteredText' Try typing something! This $NAME instance is available globally as inputModel. You'll see that changing the state with JS reflects the same changes on the input and the purple text."
 }

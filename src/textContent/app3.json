@@ -5,5 +5,10 @@
     "If you define unresolvable dependencies e.g. circular dependencies: there will probably be an error on initialization. If not, you might get a stack overflow/infinite loop, so be careful with dependencies.",
     "Computed properties are accessible from the $NAME instance's state object in the same way that data properties are. The reactive data can be used in the same way as non computed reactive data, with watchers, other computed properties, HTML binding, etc other than input binding."
   ],
-  "lowerDescription": "This example uses a watcher to set the height and width of this box."
+  "lowerDescription": [
+    "This example uses a watcher to set the height and width of this box.",
+    "At the moment, $NAME does not support watching multiple properties. I might add this later, it's not a huge change.",
+    "In this example, watching boxDescription is effectively watching area, color, width, and height since boxDescription directly/indirectly depends on those properties.",
+    "Right now, watchers and recomputes are triggered on assignment, not necessarily change. I might change this in the future, it's also not a huge change."
+  ]
 }
