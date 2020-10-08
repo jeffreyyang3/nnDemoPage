@@ -1,0 +1,9 @@
+{
+  "title": "Computed Properties",
+  "descriptionPars": [
+    "In the $NAME constructor, you can define computed properties: values that are computed based on other reactive properties, which could be reactive data, or other computed properties. The value is computed initially using the function provided, and then recomputed by calling the function again if and only if any of the dependencies are changed. Right now, you have to specify the names of the reactive dependencies as a list. In the future I'll copy what Vue does so you don't need to specify the dependencies if that isn't too hard.",
+    "If you define unresolvable dependencies e.g. circular dependencies: there will probably be an error on initialization. If not, you might get a stack overflow/infinite loop, so be careful with dependencies.",
+    "Computed properties are accessible from the $NAME instance's state object in the same way that data properties are. The reactive data can be used in the same way as non computed reactive data, with watchers, other computed properties, HTML binding, etc other than input binding."
+  ],
+  "lowerDescription": "This example uses a watcher to set the height and width of this box."
+}

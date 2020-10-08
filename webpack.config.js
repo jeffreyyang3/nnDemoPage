@@ -17,6 +17,7 @@ module.exports = {
       ignored: [
         path.resolve(__dirname, "node_modules"),
         path.resolve(__dirname, "test"),
+        /\.swp$/
       ],
     },
   },
